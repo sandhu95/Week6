@@ -19,7 +19,7 @@ public class Week6 {
 		// 4. Output the item in position 0
 		System.out.println("Name in pos 0:");
 		// @TODO: Write the code to output the the name in pos 0
-		System.out.println("----------");
+		System.out.println(names[0]);
 		
 		
 		// 5. Output everything in array
