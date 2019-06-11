@@ -41,7 +41,7 @@ public class Week6 {
 		
 		// 7. Remove someone from the array
 		// @TODO: Fill in code here
-		
+		names[3]=null;
 		
 		// 8. Loop through every item in the array and output:
 		// HELLO _______ (where ___ is the name)
