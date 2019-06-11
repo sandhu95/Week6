@@ -21,14 +21,22 @@ public class Week6 {
 		// @TODO: Write the code to output the the name in pos 0
 		System.out.println(names[0]);
 		
-		
 		// 5. Output everything in array
 		System.out.println("Everything in array: ");
 		// @TODO: Write code to output everything
+		for(int i=0; i< names.length;i++ )
+		{
+			System.out.println(names[i]);
+		}
 				
 		// 6. Add something to the end of the array
+		try {
 		names[7] = "Emad";
-		// @TODO:  Write code to output names[7] to screen
+		}
+		catch(Exception e)
+		{
+			System.out.println("index donot exist");
+		}// @TODO:  Write code to output names[7] to screen
 		
 		
 		// 7. Remove someone from the array
