@@ -5,28 +5,28 @@ public class Circle
 	private double radius;
 	
 	//-----Constructor
-	public Circle(double radius)
+	public Circle()
 	{
 		this.radius=radius;
 	}
 
 	//-----Methods
-	public double area( double rad)
+	public double area()
 	{
 		double area;
-		area= (22/7)*rad*rad;
+		area= (22/7)*radius*radius;
 		return area;
 	}
-	public double circumf( double rad)
+	public double circumf()
 	{
 		double circumference;
-		circumference= 2*(22/7)*rad;
+		circumference= 2*(22/7)*radius;
 		return circumference;
 	}
-	public double dm( double rad)
+	public double dm()
 	{
 		double diameter;
-		diameter= 2*rad;
+		diameter= 2*radius;
 		return diameter;
 	}
 	
