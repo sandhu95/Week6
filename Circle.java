@@ -1,4 +1,5 @@
-
+import java.util.Scanner;
+import java.lang.Math.*;
 public class Circle 
 {
 	//-----Properties
@@ -7,6 +8,9 @@ public class Circle
 	//-----Constructor
 	public Circle()
 	{
+	}
+	public Circle(double radius)
+	{
 		this.radius=radius;
 	}
 
@@ -14,13 +18,13 @@ public class Circle
 	public double area()
 	{
 		double area;
-		area= (22/7)*radius*radius;
+		area= Math.PI*radius*radius;
 		return area;
 	}
 	public double circumf()
 	{
 		double circumference;
-		circumference= 2*(22/7)*radius;
+		circumference= 2*Math.PI*radius;
 		return circumference;
 	}
 	public double dm()
@@ -37,5 +41,17 @@ public class Circle
 
 		public void setRadius(double radius) {
 			this.radius = radius;
+		}
+		
+		public static void main( String args[])
+		{
+			Circle cir= new Circle();
+			Scanner input = new Scanner(System.in);
+			System.out.print("Enter the radius: ");
+			cir.setRadius(input.nextDouble());
+			System.out.println("area: "+cir.area());
+			System.out.println("circumference: "+cir.circumf());
+			System.out.println("diameter: "+cir.dm());
+			input.close();
 		}
 }
